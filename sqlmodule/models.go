@@ -30,7 +30,7 @@ func (Envelope) TableName() string {
 var DB *gorm.DB
 
 const DbType string = "mysql"
-const DbAddress string = "root:123456@(180.184.71.7:8066)/envelope_db?charset=utf8&parseTime=True&loc=Local"
+const DbAddress string = "root:123456@(180.184.64.207:8066)/envelope_db?charset=utf8&parseTime=True&loc=Local"
 
 func InitDB() (*gorm.DB, error) {
 	db, err := gorm.Open(DbType, DbAddress)
